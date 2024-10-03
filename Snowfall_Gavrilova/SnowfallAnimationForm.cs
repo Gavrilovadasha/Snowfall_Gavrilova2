@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Snowfall_Gavrilova
 {
+    ///<summary>
+    ///
+    ///</summary>
     public partial class SnowfallAnimationForm : Form
     {
         private Timer timer;
