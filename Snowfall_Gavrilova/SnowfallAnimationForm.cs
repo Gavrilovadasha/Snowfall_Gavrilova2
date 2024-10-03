@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace Snowfall_Gavrilova
 {
-    ///<summary>
-    ///
-    ///</summary>
+    /// <summary>
+    /// Класс, представляющий форму для анимации снегопада.
+    /// </summary>
+
     public partial class SnowfallAnimationForm : Form
     {
         private Timer timer;
@@ -26,6 +27,11 @@ namespace Snowfall_Gavrilova
 
         public SnowfallAnimationForm()
         {
+            /// <summary>
+            /// Этот конструктор инициализирует объект SnowfallAnimationForm,
+            /// вызывая метод InitializeComponent() для создания пользовательского интерфейса
+            /// и метод InitializeSnowFlakes() для начальной инициализации анимации снегопада.
+            /// </summary>
             InitializeComponent();
             InitializeSnowFlakes();
         }
