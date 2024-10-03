@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Snowfall_Gavrilova
 {
+    /// <summary>
+    /// Класс, представляющий форму для анимации снегопада.
+    /// </summary>
     public partial class SnowfallAnimationForm : Form
     {
         private Timer timer;
@@ -19,10 +22,15 @@ namespace Snowfall_Gavrilova
         private const int MAX_SNOWFLAKES = 35;
         private const int MIN_SNOWFLAKES = 10;
         private static readonly int[] SNOWFLAKE_SIZES = { 10, 15, 25, 40 };
-        private const int SPEED = 10; // Скорость движения
+        private const int SPEED = 20; // Скорость движения
 
         public SnowfallAnimationForm()
         {
+            /// <summary>
+            /// Этот конструктор инициализирует объект SnowfallAnimationForm,
+            /// вызывая метод InitializeComponent() для создания пользовательского интерфейса
+            /// и метод InitializeSnowFlakes() для начальной инициализации анимации снегопада.
+            /// </summary>
             InitializeComponent();
             InitializeSnowFlakes();
         }

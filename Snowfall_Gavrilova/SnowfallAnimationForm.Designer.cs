@@ -53,8 +53,10 @@
             this.BackgroundImage = global::Snowfall_Gavrilova.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1924, 953);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SnowfallAnimationForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Снегопад";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
