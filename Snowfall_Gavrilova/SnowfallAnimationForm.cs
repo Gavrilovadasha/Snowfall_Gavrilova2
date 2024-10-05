@@ -57,10 +57,7 @@ namespace Snowfall_Gavrilova
             PictureBox snowflake = new PictureBox();
             snowflake.Image = global::Snowfall_Gavrilova.Properties.Resources.snowflake;
 
-            // Выбираем случайный размер из нашего массива
             int size = SNOWFLAKE_SIZES[rnd.Next(SNOWFLAKE_SIZES.Length)];
-
-            // Масштабируем изображение до соответствующего размера
             snowflake.Image = ResizeImage(global::Snowfall_Gavrilova.Properties.Resources.snowflake, size);
 
             // Генерируем случайную позицию внутри границ формы
