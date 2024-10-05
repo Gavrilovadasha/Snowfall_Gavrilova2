@@ -60,7 +60,6 @@ namespace Snowfall_Gavrilova
             int size = SNOWFLAKE_SIZES[rnd.Next(SNOWFLAKE_SIZES.Length)];
             snowflake.Image = ResizeImage(global::Snowfall_Gavrilova.Properties.Resources.snowflake, size);
 
-            // Генерируем случайную позицию внутри границ формы
             int x = rnd.Next(0, this.ClientRectangle.Width - size);
             int y = rnd.Next(0, this.ClientRectangle.Height - size);
             snowflake.Location = new Point(x, y);
