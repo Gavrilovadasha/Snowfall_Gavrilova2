@@ -22,7 +22,7 @@ namespace Snowfall_Gavrilova
         private const int MAX_SNOWFLAKES = 35;
         private const int MIN_SNOWFLAKES = 10;
         private static readonly int[] SNOWFLAKE_SIZES = { 10, 15, 25, 40 };
-        private const int SPEED = 20; // Скорость движения
+        private const int SPEED = 20;
 
         public SnowfallAnimationForm()
         {
